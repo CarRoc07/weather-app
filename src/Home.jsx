@@ -106,7 +106,7 @@ export const Home = () => {
             <ContainerWeather>
                 <ContainerSearch>
                     <InputStyled type='text' placeholder='Search for a city' ref={refInput} error={error} autoFocus/>
-                    <ButtonStyled onClick={() => getData(refInput.current.value)}><FaSearch size={20}/></ButtonStyled>
+                    <ButtonStyled onClick={() => getData(refInput.current.value)}><FaSearch size={18}/></ButtonStyled>
                 </ContainerSearch>
                 {
                     error ? <ErrorMessage>City not found</ErrorMessage> : null

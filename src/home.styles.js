@@ -8,11 +8,19 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: 480px) {
+        height: auto;
+    }
     `
 
 export const GeneralTitle = styled.h1`
     font-size: 60px;
     font-weight: 700;
+
+    @media (max-width: 400px) {
+        font-size: 45px;
+    }
     `
 
 export const ContainerWeather = styled.div`
@@ -23,6 +31,16 @@ export const ContainerWeather = styled.div`
     margin: 15px auto;
     text-align: center;
     background: linear-gradient(135deg, rgba(3,28,147,1) 0%, rgba(2,16,82,1) 100%);
+
+    @media (max-width: 530px) {
+        width: auto;
+    }
+
+    @media (max-width: 400px) {
+        margin: 0;
+        padding: 10px;
+        border-radius: 0;
+    }
     `
 
 export const ContainerSearch = styled.div`
@@ -42,6 +60,11 @@ export const InputStyled = styled.input`
     flex: 1;
     background: #f3f1f1;
 
+    @media (max-width: 530px) {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
     ${props =>
     props.error &&
     css`
@@ -57,6 +80,11 @@ export const ButtonStyled = styled.button`
     border-radius: 50%;
     cursor: pointer;
     background: #2c2c2c;
+
+    @media (max-width: 530px) {
+        width: 35px;
+        height: 35px;
+    }
 
     &:hover {
         background: black;
@@ -88,6 +116,10 @@ export const ContainerDetails = styled.div`
     justify-content: space-between;
     padding: 0px;
     margin-top: 40px;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
     `
 
 export const ColDetails = styled.div`
